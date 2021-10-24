@@ -101,7 +101,7 @@ body {
   border-radius: 50%;
   border: 3px solid #3F3F3F;
   
-  background-image: url("img/botao-converter-antes.png");
+  background-image: url("botao-converter-antes.png");
   background-size: 10vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -109,7 +109,7 @@ body {
 }
 
 #botao-converter input:hover{
-    background-image: url("img/botao-converter-depois.png");
+    background-image: url("botao-converter-depois.png");
     border: 3px solid #D6AE01;
 }
 
