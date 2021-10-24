@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+    </style>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Convertae - Seu conversor de moedas</title>
+</head>
+
+<body onload="start()" id="topo">    
+    <header>
+        <nav id="menu-container">
+            <a id="logo">
+                <!--
+                <img src="https://images.emojiterra.com/google/android-nougat/512px/1f4b0.png" alt="Logo">
+                -->
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <ul id="ul-container">
+                <li>
+                    <a href="index.html#topo">
+                        Home
+                    </a>
+                    <br>
+                </li>
+                <li>
+                    <a href="index.html#sobre">
+                        Sobre
+                    </a>
+                    <br>
+                </li>
+                <li>
+                    <a href="mailto:hiancirillo@gmail.com">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="conteudo-container">
+            <h1 id="titulo">
+                Convertae
+            </h1>
+            <p id="descricao">
+                Convertae é o seu site para conversão de moedas! De uma maneira simples e intuitiva, você pode comparar o câmbio e descobrir quais países utilizam a moeda selecionada. Vem pro Convertae! 
+            </p>
+        </div>
+    </section> 
+    <main>
+        <form id="form" action="javascript:convertCurrency()">
+            <div class="div-form">
+                <div class="caixatext-form">
+                    <select id="moedaconvert">
+                        <option value="1">Moeda</option>
+                    </select>
+                    <input type="number" name="convertendo" id="convertendo">
+                </div>
+            </div>
+            <div class="div-form" id="botao-converter">
+                <input type="submit" value="">
+            </div>
+            <div class="div-form">
+                <div class="caixatext-form">
+                    <select id="moedaconvertida">
+                        <option value="1">Moeda</option>
+                    </select>
+                    <input type="text" name="convertido" id="convertido" readonly>
+                </div>
+            </div>            
+        </form>
+        
+    </main>
+
+
+
+
+
+
+    <section> 
+        <h3 id="nome-moeda">O <span id="nome-moeda"></span> é usada em: </h3>
+        <div id="paises-container">
+            <div id="pais">
+            </div>
+        </div>
+    </section>  
+    
+    
+
+
+
+    <section id="sobre">
+        <h2>Um pouco sobre nós...</h2>
+        <div id="container-sobre">
+            <div class="info">
+                <div class="icon-top">
+                    <img class="icone" src="img/icone-simples_mao-clicando.png" alt="">
+                    <span class="topico">Simples</span>
+                </div>
+                <div class="desc">
+                    <p>
+                        Para utilizar a ferramenta, basta selecionar a moeda inicial, digitar o valor desejado, selecionar a moeda correspondente e clicar no botão de converter
+                    </p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="icon-top">
+                    <img class="icone" src="img/icone-informativo_jornal.png" alt="">
+                    <span class="topico">Informativo</span>
+                </div>
+                <div class="desc">
+                    <p>
+                        Além da conversão são mostrados os países que utilizam a moeda para a qual se quer converter
+                    </p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="icon-top">
+                    <img class="icone" src="img/icone-funcional_engrenagem.png" alt="">
+                    <span class="topico">Funcional</span>
+                </div>
+                <div class="desc">
+                    <p>
+                        É capaz de converter valores entre 168 moedas presentes ao redor do mundo, com atualização diária
+                    </p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="icon-top">
+                    <img class="icone" src="img/icone-acessivel_check.png" alt="">
+                    <span class="topico">Acessível</span>
+                </div>
+                <div class="desc">
+                    <p>
+                        Completamente gratuito e adaptável aos mais diversos dispositivos
+                    </p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="icon-top">
+                    <img class="icone" id="qrcode" src="/img/qrcode.png" alt="">
+                    <span class="topico">Apoie-nos!</span>
+                </div>
+                <div class="desc">
+                    <p>
+                        Ajude a manter este projeto online! Com a doação, você nos incentiva a colocar mais conteúdos no site e a possibilitar sua manutenção! 
+                </div>
+            </div>
+        </div> 
+    </section> 
+    <footer>
+        <div id="links">
+            <span>Siga-nos</span>
+            <a href="https://linktr.ee/hiancirillo" target="_blank">
+                <img src="img/icone-link-antes.png" alt="" onMouseOver="mouseEmCima(this)" onMouseOut="mouseFora(this)">
+            </a>              
+        </div>
+        <div id="copyright">
+            <span id="copy">Convertae ©.</span> <span id="right"> Todos os direitos reservados</span>
+        </div>
+    </footer>                   
+</body>
+</html>
