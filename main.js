@@ -72,7 +72,7 @@ function order(data11) {
 }
 
 async function getCountries(){
-    let response = await fetch('data/currencies.json')
+    let response = await fetch('currencies.json')
     let payload = await response.json()
     let html = order(payload)
     document.getElementById("moedaconvert").innerHTML += html
@@ -81,12 +81,12 @@ async function getCountries(){
 
 function mouseEmCima(imagem) {
    
-    imagem.src="img/icone-link-depois.png";
+    imagem.src="icone-link-depois.png";
     
 }
     
  function mouseFora(imagem) {
     
-    imagem.src="img/icone-link-antes.png";
+    imagem.src="icone-link-antes.png";
     
 }
